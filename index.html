@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Annuaire CoopTech (POC Gitribute)</title>
+  <script
+    type="text/javascript"
+    src="https://multi-gitribute.netlify.app/js/app.js">
+  </script>
+  <link
+    type="text/css"
+    href="https://multi-gitribute.netlify.app/css/app.css"
+    rel="stylesheet">
+  <link type="text/css" href="https://multi-gitribute.netlify.app/fonts/materialdesignicons-webfont.woff2" rel="stylesheet">
+</head>
+
+<body style="background-color: grey; padding: 1em;">
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+
+  <h2 id="title-demo" class="pt-6 title is-flex is-align-items-center is-justify-content-center has-text-white">
+    <a href="https://gitlab.com/multi-coop/gitribute" target="_blank">
+      <img src="/images/logo_GITRIBUTE.png" alt="logo gitribute" style="height: 50px !important; width: auto !important">
+    </a>
+    <span class="ml-3 pb-3">
+      Intégration du widget <code>gitribute-file</code> dans une page html
+    </span>
+  </h2>
+
+  <div class="container">
+    <div class="content my-6 px-6">
+      <p class="is-size-6 has-text-white">
+        L'import du widget <code>gitribute</code> dans une page html permet d'afficher sur un site tiers
+      </p>
+      <p class="is-size-6 has-text-white">
+        L'import du widget consiste à simplement copier-coller quelques lignes dans la page html de votre choix.
+      </p>
+      <p class="is-size-6 has-text-white">
+        Le widget est paramétrable et il peut être utilisé indistinctement et séparément pour différents tableurs source
+      </p>
+      <p class="is-size-6 has-text-white">
+        Le widget est sous licence libre et il n'y a aucun coût ou surcoût dans son utilisation.
+      </p>
+      <p class="is-size-6 has-text-white">
+        Plusieurs fonctionnalités sont intégrées : 
+        <ul>
+          <li class="is-size-6 has-text-white">
+            Filtres de sélection (paramétrables) ;
+          </li>
+          <li class="is-size-6 has-text-white">
+            Redirection vers le site source depuis les fiches détaillées ;
+          </li>
+          <li class="is-size-6 has-text-white">
+            Rechargement des données source ;
+          </li>
+          <li class="is-size-6 has-text-white">
+            Possibilité de télécharger les données au format .tsv ;
+          </li>
+          <li class="is-size-6 has-text-white">
+            Plus de d'infos dans la 
+            <a href="https://gitlab.com/multi-coop/gitribute-odf-observatoire" target="_blank" class="has-text-white is-underlined">
+              documentation en ligne.
+            </a>
+          </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <p id="gitribute-csv-github-cooptech" class="ml-4 pt-6 subtitle has-text-white">
+    <a href="/#gitribute-csv-github-cooptech" style="color: white; margin-right:  0.5em;">
+      #
+    </a>
+    Liste des coopératives de la tech en France
+  </p>
+  <div style="background-color: white; margin: 1em;">
+    <multi-gitribute-file
+      gitfile="https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/cooptech/Annuaire-SCOP-SCIC-tech-France.csv"
+      options='{
+      "height": "500px",
+      "separator":",",
+      "lockcolumns": true,
+      "tagseparator":",",
+      "customfilters" : {
+        "activate": true,
+        "filterfields": [
+        "type",
+          "Statut juridique"
+          ]
+      },
+      "schema": {
+        "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/cooptech/Annuaire-SCOP-SCIC-tech-France-schema.json"
+      },
+      "fields-custom-properties": {
+        "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/cooptech/Annuaire-SCOP-SCIC-tech-France-fields-custom-props.json"
+      },
+      "customsorting" : {
+        "activate": true,
+        "sortfields": [
+          { "name": "Nom" }
+        ]
+      },
+      "pagination":{
+        "itemsPerPage": 20
+      },
+      "cardsview": { "activate": true, "default": false },
+      "cardsdetail": true,
+      "cardssettings": {
+        "mini": {
+          "Nom": {"position": "title"},
+          "Présentation": {"position": "description"},
+          "Site internet": {"position": "description"},
+          "Statut juridique": {"position": "tags"},
+          "Domaine(s)": {"position": "tags"}
+        },
+        "detail": {
+          "Nom": {"position": "title"},
+          "Site internet": {"position": "description"},
+          "Présentation": {"position": "description"},
+          "Numéro SIREN": {"position": "description"},
+          "Adresse": {"position": "description"},
+          "Statut juridique": {"position": "tags"},
+          "Domaine(s)": {"position": "tags"},
+          "Fiche URSCOP": {"position": "links"}
+        }
+      }
+    }' title="Liste des coopératives de la tech en France - csv ( semicolon separator)" usertoken="" locale="fr"
+      debug="false">
+    </multi-gitribute-file>
+  </div>
+
+  <p id="page-credits" class="mt-6 has-text-centered has-text-white">
+    Un projet numérique en partenariat avec
+    <a href="https://www.cooptech.fr/" target="_blank" class="has-text-white is-underlined">
+      la CoopTech
+    </a>
+    <br>
+    Codé par la coopérative numérique 
+    <a href="https://multi.coop" target="_blank" class="has-text-white is-underlined">
+      multi
+    </a>
+  </p>
+  <p id="page-credits" class="my-6 is-flex is-align-items-center is-justify-content-center">
+    <a href="https://www.cooptech.fr/" class="mr-4" target="_blank">
+      <img src="/images/cooptech_logo.svg" alt="logo ademe" style="height: 60px !important; width: auto !important">
+    </a>
+    <a href="https://multi.coop" class="" target="_blank">
+      <img src="/images/multi-logo.png" alt="logo multi" style="height: 50px !important; width: auto !important">
+    </a>
+  </p>
+
+</body>
+
+</html>
