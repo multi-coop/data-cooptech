@@ -54,8 +54,11 @@ Le widget nécessite d'importer deux fichiers dans votre page html (de préfére
 Ces deux fichiers sont hébergés à l'adresse `https://deploy-preview-7--multi-gitribute.netlify.app`, il est donc possible de les importer dans la balise `<head>` de votre page html. Le widget peut alors être utilisé et configuré/personnalisé directement dans la partie `<body>` de la page html.
 
 ```html
+<!-- IMPORT DE L'APPLICATIF DU WIDGET (DANS LA BALISE <head>) -->
 <script src="https://deploy-preview-7--multi-gitribute.netlify.app/js/app.js" type="text/javascript"></script>
 <link type="text/css" href="https://deploy-preview-7--multi-gitribute.netlify.app/css/app.css" rel="stylesheet">
+
+<!-- INTEGRATION DU WIDGET POUR LES DONNEES SOUHAITEES (DANS LA BALISE <body>) -->
 <multi-gitribute-file
   gitfile="https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/cooptech/Annuaire-SCOP-SCIC-tech-France.csv"
   options='{
