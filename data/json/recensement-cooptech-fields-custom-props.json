@@ -1,0 +1,120 @@
+{
+  "fields": [
+    {
+      "name": "Nom",
+      "sticky": true,
+      "primaryKey": true
+    },
+    {
+      "name": "Présentation",
+      "subtype": "longtext",
+      "maxLength": 50
+    },
+    {
+      "name": "Site internet",
+      "subtype": "link"
+    },
+    {
+      "name": "Contact",
+      "subtype": "email"
+    },
+    {
+      "name": "Domaine(s)",
+      "subtype": "tags",
+      "tagSeparator": ",",
+      "allowNew": true
+    },
+    {
+      "name": "Statut juridique",
+      "subtype": "tag"
+    },
+    {
+      "name": "Adresse",
+      "subtype": "longtext",
+      "maxLength": 20
+    },
+    {
+      "name": "Département(s)",
+      "subtype": "tags",
+      "tagSeparator": ","
+    },
+    {
+      "name": "Région(s)",
+      "subtype": "tags",
+      "tagSeparator": ","
+    },
+    {
+      "name": "Numéro SIREN"
+    },
+    {
+      "name": "Latitude",
+      "subtype": "geopoint"
+    },
+    {
+      "name": "Longitude",
+      "subtype": "geopoint"
+    },
+    {
+      "name": "Adhérent CoopTech"
+    },
+    {
+      "name": "Notes",
+      "subtype": "longtext",
+      "maxLength": 20
+    }
+  ],
+  "consolidation": [
+    {
+      "api_name": "api-entreprise",
+      "source_fields": [
+        { "name": "Numéro SIREN" }
+      ],
+      "activate": true,
+      "api": "https://entreprise.data.gouv.fr/api/sirene/v3/unites_legales/{{Numéro SIREN}}",
+      "results_fields": [
+        {
+          "resp_field": "unite_legale.etablissement_siege.latitude",
+          "map_to_field": "Latitude"
+        },
+        {
+          "resp_field": "unite_legale.etablissement_siege.longitude",
+          "map_to_field": "Longitude"
+        },
+        {
+          "resp_field": "unite_legale.etablissement_siege.geo_adresse",
+          "map_to_field": "Adresse"
+        },
+        {
+          "resp_field": "unite_legale.etablissement_siege.code_postal",
+          "map_to_field": "Département(s)"
+        }
+      ]
+    },
+    {
+      "api_name": "adresse.gouv.fr",
+      "source_fields": [
+        { "name": "Adresse" }
+      ],
+      "activate": false,
+      "api": "api-ban",
+      "results_fields": [
+        { 
+          "resp_field" : "latitude",
+          "map_to_field": "Latitude"
+        },
+        { 
+          "resp_field" : "longitude",
+          "map_to_field": "Longitude"
+        }
+      ]
+    }
+  ],
+  "validation": [
+    {
+      "api_name": "api-json-validation",
+      "api": "https://json.validator.validata.fr/validate",
+      "api_doc": "https://json.validator.validata.fr/apidocs",
+      "notes": "not implemented (yet)"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "fields": [
+    {
+      "name": "Nom",
+      "title": "Nom de la structure",
+      "description": "Nom commercial de la structure",
+      "type": "string"
+    },
+    {
+      "name": "Présentation",
+      "title": "Présentation de la structure",
+      "description": "Paragraphe de présentation de la structure",
+      "type": "string"
+    },
+    {
+      "name": "Site internet",
+      "title": "URL du site internet de la structure",
+      "type": "string",
+      "format": "uri"
+    },
+    {
+      "name": "Contact",
+      "title": "Mail de contact",
+      "type": "string",
+      "format": "email"
+    },
+    {
+      "name": "Domaine(s)",
+      "title": "Domaines d'exercice",
+      "type": "string",
+      "constraints": {
+        "enum" : [
+          "web",
+          "data",
+          "design",
+          "infra",
+          "conception",
+          "bizdev",
+          "conseil",
+          "autre"
+        ]
+      }
+    },
+    {
+      "name": "Statut juridique",
+      "title": "Statut juridique",
+      "type": "string",
+      "constraints": {
+        "enum" : [
+          "SCOP",
+          "SCIC",
+          "CAE",
+          "Fédération",
+          "Association",
+          "GIE",
+          "GIP",
+          "Institution",
+          "Autre"
+        ]
+      }
+    },
+    {
+      "name": "Adresse",
+      "type": "string"
+    },
+    {
+      "name": "Département(s)",
+      "type": "string"
+    },
+    {
+      "name": "Région(s)",
+      "type": "string"
+    },
+    {
+      "name": "Numéro SIREN",
+      "title": "N° SIREN de la structure",
+      "description": "Numéro de SIREN de la structure",
+      "type": "string"
+    },
+    {
+      "name": "Latitude",
+      "title": "Latitude du siège",
+      "type": "number"
+    },
+    {
+      "name": "Longitude",
+      "title": "Longitude du siège",
+      "type": "number"
+    },
+    {
+      "name": "Adhérent CoopTech",
+      "description": "La structure est-elle adhérente de l'association CoopTech ?",
+      "type": "boolean"
+    },
+    {
+      "name": "Notes",
+      "description": "Précisions supplémentaires sur la structure",
+      "type": "string"
+    }
+  ]
+}
