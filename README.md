@@ -20,16 +20,15 @@ L'autre avantage de cette solution est qu'elle n'est déployée qu'une fois, mai
 
 ## Démo
 
-- Déploiement du code source de l'applicatif (gitribute) : [![Netlify Status](https://api.netlify.com/api/v1/badges/693b562e-5ff8-4101-9cdb-157f7be2d3d2/deploy-status)](https://app.netlify.com/sites/multi-gitribute-test/deploys)
-- Page html de démo : [![Netlify Status](https://api.netlify.com/api/v1/badges/57d96b44-b6c4-4f0a-a7f7-412571f23aa2/deploy-status)](https://app.netlify.com/sites/demo-gitribute-cooptech/deploys)
-- url de démo : 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/57d96b44-b6c4-4f0a-a7f7-412571f23aa2/deploy-status)](https://app.netlify.com/sites/demo-gitribute-cooptech/deploys)
+- URL de démo : 
   - gitribute-file / données CoopTech : https://demo-gitribute-cooptech.netlify.app/
 
 ---
 
 ## Captures d'écran
 
-`... en construction ...`
+![preview](./images/screenshots/screenshot-01.png)
 
 ---
 
