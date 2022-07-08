@@ -6,37 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Annuaire CoopTech (POC)</title>
-  <script
-    type="text/javascript"
-    src="https://gitribute.multi.coop/js/app.js">
-  </script>
-  <link
-    type="text/css"
-    href="https://gitribute.multi.coop/css/app.css"
-    rel="stylesheet">
-  <link type="text/css" href="https://gitribute.multi.coop/fonts/materialdesignicons-webfont.woff2" rel="stylesheet">
 </head>
 
 <body style="background-color: grey; padding: 1em;">
   <noscript>
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
       Please enable it to continue.</strong>
-  </noscript>
-
-  <h2 id="title-demo" class="pt-6 title is-flex is-align-items-center is-justify-content-center has-text-white">
-    <a href="https://gitlab.com/multi-coop/gitribute" target="_blank">
-      <img src="/images/logo_GITRIBUTE.png" alt="logo gitribute" style="height: 50px !important; width: auto !important">
-    </a>
-    <span class="ml-3 pb-3">
-      Intégration du widget <code>gitribute-file</code> dans une page html
-    </span>
-  </h2>
-
-  <div class="container">
-    <div class="content my-6 px-6">
-      <p class="is-size-6 has-text-white">
-        L'import du widget <code>gitribute</code> dans une page html permet d'afficher sur un site tiers des données hébergées sur github, gitlab ou dans un wiki.
-      </p>
+    </noscript>
+    
+    <h2 id="title-demo" class="pt-6 title is-flex is-align-items-center is-justify-content-center has-text-white">
+      <a href="https://gitlab.com/multi-coop/gitribute" target="_blank">
+        <img src="https://gitlab.com/multi-coop/gitribute/-/raw/main/public/logo_GITRIBUTE.png" alt="logo gitribute" style="height: 50px !important; width: auto !important">
+      </a>
+      <span class="ml-3 pb-3">
+        Intégration du widget <code>gitribute-file</code> dans une page html
+      </span>
+    </h2>
+    
+    <div class="container">
+      <div class="content my-6 px-6">
+        <p class="is-size-6 has-text-white">
+          L'import du widget <code>gitribute</code> dans une page html permet d'afficher sur un site tiers des données hébergées sur github, gitlab ou dans un wiki.
+        </p>
       <p class="is-size-6 has-text-white">
         L'import du widget consiste à simplement copier-coller quelques lignes de code dans la page html de votre choix.
       </p>
@@ -72,6 +63,7 @@
     </div>
   </div>
 
+
   <p id="gitribute-csv-github-cooptech" class="ml-4 pt-6 subtitle has-text-white">
     <a href="/#gitribute-csv-github-cooptech" style="color: white; margin-right:  0.5em;">
       #
@@ -79,62 +71,109 @@
     Liste des coopératives de la tech en France
   </p>
   <div style="background-color: white; margin: 1em;">
+
+    <!-- GITRIBUTE - contribute with GIT ...but without minding it-->
+    <!-- An open source widget coded with 🤍  by the tech cooperative multi : https://multi.coop -->
+
+    <!-- GITRIBUTE WIDGET'S HTML BLOCK-->
     <multi-gitribute-file
-      title="Liste des coopératives de la tech en France - csv ( semicolon separator)"
-      gitfile="https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/cooptech/Annuaire-SCOP-SCIC-tech-France.csv"
-      options='{
-        "height": "500px",
-        "separator":",",
-        "lockcolumns": true,
-        "tagseparator":",",
-        "customfilters" : {
-          "activate": true,
-          "filterfields": [
-          "type",
-            "Statut juridique"
-            ]
-        },
-        "schema": {
-          "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/cooptech/Annuaire-SCOP-SCIC-tech-France-schema.json"
-        },
-        "fields-custom-properties": {
-          "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/cooptech/Annuaire-SCOP-SCIC-tech-France-fields-custom-props.json"
-        },
-        "customsorting" : {
-          "activate": true,
-          "sortfields": [
-            { "name": "Nom" }
-          ]
-        },
-        "pagination":{
-          "itemsPerPage": 20
-        },
-        "cardsview": { "activate": true, "default": false },
-        "cardsdetail": true,
-        "cardssettings": {
-          "mini": {
-            "Nom": {"position": "title"},
-            "Présentation": {"position": "description"},
-            "Site internet": {"position": "description"},
-            "Statut juridique": {"position": "tags"},
-            "Domaine(s)": {"position": "tags"}
-          },
-          "detail": {
-            "Nom": {"position": "title"},
-            "Site internet": {"position": "description"},
-            "Présentation": {"position": "description"},
-            "Numéro SIREN": {"position": "description"},
-            "Adresse": {"position": "description"},
-            "Statut juridique": {"position": "tags"},
-            "Domaine(s)": {"position": "tags"},
-            "Fiche URSCOP": {"position": "links"}
-          }
+    title="Liste des coopératives de la tech en France - csv ( semicolon separator)"
+    gitfile="https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/cooptech/Annuaire-SCOP-SCIC-tech-France.csv"
+    options='{
+    "height": "500px",
+    "separator": ",",
+    "lockcolumns": true,
+    "tagseparator": ",",
+    "customfilters": {
+      "activate": true,
+      "filterfields": [
+        "type",
+        "Statut juridique"
+      ],
+      "tagsSeparator": ","
+    },
+    "schema": {
+      "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/cooptech/Annuaire-SCOP-SCIC-tech-France-schema.json"
+    },
+    "fields-custom-properties": {
+      "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/cooptech/Annuaire-SCOP-SCIC-tech-France-fields-custom-props.json"
+    },
+    "customsorting": {
+      "activate": true,
+      "sortfields": [
+        {
+          "name": "Nom"
         }
-      }' 
-      usertoken=""
-      locale="fr"
-      debug="false">
-    </multi-gitribute-file>
+      ]
+    },
+    "pagination": {
+      "itemsPerPage": 20
+    },
+    "cardsview": {
+      "activate": true,
+      "default": false
+    },
+    "cardsdetail": true,
+    "cardssettings": {
+      "mini": {
+        "Nom": {
+          "position": "title"
+        },
+        "Présentation": {
+          "position": "description"
+        },
+        "Site internet": {
+          "position": "description"
+        },
+        "Statut juridique": {
+          "position": "tags"
+        },
+        "Domaine(s)": {
+          "position": "tags"
+        }
+      },
+      "detail": {
+        "Nom": {
+          "position": "title"
+        },
+        "Site internet": {
+          "position": "description"
+        },
+        "Présentation": {
+          "position": "description"
+        },
+        "Numéro SIREN": {
+          "position": "description"
+        },
+        "Adresse": {
+          "position": "description"
+        },
+        "Statut juridique": {
+          "position": "tags"
+        },
+        "Domaine(s)": {
+          "position": "tags"
+        },
+        "Fiche URSCOP": {
+          "position": "links"
+        }
+      }
+    }
+  }'
+    onlypreview="false"
+    locale="fr"
+  />
+  <!-- An open source widget coded with 🤍  by the tech cooperative multi.coop -->
+  
+  <!-- GITRIBUTE WIDGET'S APP.JS SCRIPT -->
+  <script src="https://gitribute.multi.coop/js/app.js" type="text/javascript" defer/>
+  
+  
+  
+  
+  
+  
+    </script>
   </div>
 
   <p id="page-credits" class="mt-6 has-text-centered has-text-white">
@@ -150,12 +189,12 @@
   </p>
   <p id="page-credits" class="my-6 is-flex is-align-items-center is-justify-content-center">
     <a href="https://www.cooptech.fr/" class="mr-4" target="_blank">
-      <img src="/images/cooptech_logo.svg" alt="logo ademe" style="height: 60px !important; width: auto !important">
+      <img src="https://gitlab.com/multi-coop/gitribute-cooptech/-/raw/main/images/cooptech_logo.svg" alt="logo ademe" style="height: 45px !important; width: auto !important">
     </a>
-    <br>
-    <br>
-    <a href="https://multi.coop" class="" target="_blank">
-      <img src="/images/multi-logo.png" alt="logo multi" style="height: 50px !important; width: auto !important">
+  </p>
+  <p id="page-credits-multi" class="my-6 is-flex is-align-items-center is-justify-content-center">
+      <a href="https://multi.coop" class="" target="_blank">
+      <img src="https://gitlab.com/multi-coop/gitribute-cooptech/-/raw/main/images/multi-logo.png" alt="logo multi" style="height: 80px !important; width: auto !important">
     </a>
   </p>
 
