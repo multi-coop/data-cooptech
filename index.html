@@ -17,7 +17,7 @@
     <h2 id="title-demo" class="pt-6 title is-flex is-align-items-center is-justify-content-center has-text-white">
       <p>
         <a href="https://gitlab.com/multi-coop/datami" target="_blank">
-          <img src="https://gitlab.com/multi-coop/datami/-/raw/main/public/logo_DATAMI_title.png" alt="logo gitribute" style="height: 50px !important; width: auto !important">
+          <img src="https://gitlab.com/multi-coop/datami/-/raw/main/public/logo_DATAMI_title.png" alt="logo datami" style="height: 50px !important; width: auto !important">
         </a>
       </p>
     </h2>
@@ -60,118 +60,111 @@
         </ul>
       </p>
     </div>
-  </div>
 
 
-  <p id="gitribute-csv-github-cooptech" class="ml-4 pt-6 subtitle has-text-dark">
-    <a href="/#gitribute-csv-github-cooptech" class="has-text-dark" style="margin-right:  0.5em;">
-      #
-    </a>
-    Liste des coopératives de la tech en France
-  </p>
-  <div style="background-color: white; margin: 1em;">
+    <p id="datami-csv-github-cooptech" class="ml-4 pt-6 subtitle has-text-dark">
+      <a href="/#datami-csv-github-cooptech" class="has-text-dark" style="margin-right:  0.5em;">
+        #
+      </a>
+      Liste des coopératives de la tech en France
+    </p>
+    <div style="background-color: white; margin: 1em;">
 
-    <!-- GITRIBUTE - contribute with GIT ...but without minding it-->
-    <!-- An open source widget coded with 🤍  by the tech cooperative multi : https://multi.coop -->
+      <!-- GITRIBUTE - contribute with GIT ...but without minding it-->
+      <!-- An open source widget coded with 🤍  by the tech cooperative multi : https://multi.coop -->
 
-    <!-- GITRIBUTE WIDGET'S HTML BLOCK-->
-    <datami-file
-    title="Liste des coopératives de la tech en France"
-    gitfile="https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/cooptech/Annuaire-SCOP-SCIC-tech-France.csv"
-    options='{
-    "height": "500px",
-    "separator": ",",
-    "lockcolumns": true,
-    "tagseparator": ",",
-    "customfilters": {
-      "activate": true,
-      "filterfields": [
-        "type",
-        "Statut juridique"
-      ],
-      "tagsSeparator": ","
-    },
-    "schema": {
-      "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/cooptech/Annuaire-SCOP-SCIC-tech-France-schema.json"
-    },
-    "fields-custom-properties": {
-      "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/cooptech/Annuaire-SCOP-SCIC-tech-France-fields-custom-props.json"
-    },
-    "customsorting": {
-      "activate": true,
-      "sortfields": [
-        {
-          "name": "Nom"
-        }
-      ]
-    },
-    "pagination": {
-      "itemsPerPage": 20
-    },
-    "cardsview": {
-      "activate": true,
-      "default": false
-    },
-    "cardsdetail": true,
-    "cardssettings": {
-      "mini": {
-        "Nom": {
-          "position": "title"
-        },
-        "Présentation": {
-          "position": "description"
-        },
-        "Site internet": {
-          "position": "description"
-        },
-        "Statut juridique": {
-          "position": "tags"
-        },
-        "Domaine(s)": {
-          "position": "tags"
-        }
+      <!-- GITRIBUTE WIDGET'S HTML BLOCK-->
+      <datami-file
+      title="Liste des coopératives de la tech en France"
+      gitfile="https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/cooptech/Annuaire-SCOP-SCIC-tech-France.csv"
+      options='{
+      "height": "500px",
+      "separator": ",",
+      "lockcolumns": true,
+      "tagseparator": ",",
+      "customfilters": {
+        "activate": true,
+        "filterfields": [
+          "type",
+          "Statut juridique"
+        ],
+        "tagsSeparator": ","
       },
-      "detail": {
-        "Nom": {
-          "position": "title"
+      "schema": {
+        "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/cooptech/Annuaire-SCOP-SCIC-tech-France-schema.json"
+      },
+      "fields-custom-properties": {
+        "file": "https://github.com/multi-coop/gitribute-content-test/blob/main/data/json/cooptech/Annuaire-SCOP-SCIC-tech-France-fields-custom-props.json"
+      },
+      "customsorting": {
+        "activate": true,
+        "sortfields": [
+          {
+            "name": "Nom"
+          }
+        ]
+      },
+      "pagination": {
+        "itemsPerPage": 20
+      },
+      "cardsview": {
+        "activate": true,
+        "default": false
+      },
+      "cardsdetail": true,
+      "cardssettings": {
+        "mini": {
+          "Nom": {
+            "position": "title"
+          },
+          "Présentation": {
+            "position": "description"
+          },
+          "Site internet": {
+            "position": "description"
+          },
+          "Statut juridique": {
+            "position": "tags"
+          },
+          "Domaine(s)": {
+            "position": "tags"
+          }
         },
-        "Site internet": {
-          "position": "description"
-        },
-        "Présentation": {
-          "position": "description"
-        },
-        "Numéro SIREN": {
-          "position": "description"
-        },
-        "Adresse": {
-          "position": "description"
-        },
-        "Statut juridique": {
-          "position": "tags"
-        },
-        "Domaine(s)": {
-          "position": "tags"
-        },
-        "Fiche URSCOP": {
-          "position": "links"
+        "detail": {
+          "Nom": {
+            "position": "title"
+          },
+          "Site internet": {
+            "position": "description"
+          },
+          "Présentation": {
+            "position": "description"
+          },
+          "Numéro SIREN": {
+            "position": "description"
+          },
+          "Adresse": {
+            "position": "description"
+          },
+          "Statut juridique": {
+            "position": "tags"
+          },
+          "Domaine(s)": {
+            "position": "tags"
+          },
+          "Fiche URSCOP": {
+            "position": "links"
+          }
         }
       }
-    }
-  }'
-    onlypreview="false"
-    locale="fr"
-  />
-  <!-- An open source widget coded with 🤍  by the tech cooperative multi.coop -->
-  
-  <!-- GITRIBUTE WIDGET'S APP.JS SCRIPT -->
-  <script src="https://datami-widget.multi.coop/js/app.js" type="text/javascript" defer/>
-  
-  
-  
-  
-  
-  
+    }'
+      onlypreview="false"
+      locale="fr"
+    />
+    <!-- An open source widget coded with 🤍  by the tech cooperative multi.coop -->
+    
+    <!-- GITRIBUTE WIDGET'S APP.JS SCRIPT -->
+    <script src="https://datami-widget.multi.coop/js/app.js" type="text/javascript" defer/>
     </script>
   </div>
 
