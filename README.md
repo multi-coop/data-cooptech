@@ -8,7 +8,7 @@ Widget **[Datami](https://gitlab.com/multi-coop/datami)** de prévisualisation d
 
 La CoppTech cherche à constituer un annuaire le plus complet possible des SCOP et autres coopératives du numérique en France. Cet annuaire prend la forme d'un simple fichier `.csv` hébergé sur un repo [Github](https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/cooptech/Annuaire-SCOP-SCIC-tech-France.csv) ou [Gitlab](https://gitlab.com/multi-coop/gitribute-content-test/-/blob/main/data/csv/cooptech/Annuaire-SCOP-SCIC-tech-France.csv)
 
-Afin de pouvoir partager et de mettre en valeur toutes les ressources de la CoopTech il a été proposé d'utiliser le _widget open source_ créé par la coopérative numérique **[multi](https://multi.coop)** : le projet **[Datami](https://gitlab.com/multi-coop/datami)**.
+Afin de pouvoir partager et de mettre en valeur toutes ces ressources il a été proposé d'utiliser le _widget open source_ créé par la coopérative numérique **[multi](https://multi.coop)** : le projet **[Datami](https://gitlab.com/multi-coop/datami)**.
 
 Cet outil permet la **visualisation** des données mais également la **contribution**.
 
