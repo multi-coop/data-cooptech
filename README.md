@@ -1,6 +1,6 @@
 # Visualiseur des données de la CoopTech
 
-Widget de prévisualisation des données de la CoopTech.
+Widget **[Datami](https://gitlab.com/multi-coop/datami)** de prévisualisation des données de la CoopTech.
 
 ---
 
@@ -8,7 +8,7 @@ Widget de prévisualisation des données de la CoopTech.
 
 La CoppTech cherche à constituer un annuaire le plus complet possible des SCOP et autres coopératives du numérique en France. Cet annuaire prend la forme d'un simple fichier `.csv` hébergé sur un repo [Github](https://github.com/multi-coop/gitribute-content-test/blob/main/data/csv/cooptech/Annuaire-SCOP-SCIC-tech-France.csv) ou [Gitlab](https://gitlab.com/multi-coop/gitribute-content-test/-/blob/main/data/csv/cooptech/Annuaire-SCOP-SCIC-tech-France.csv)
 
-Afin de pouvoir partager et de mettre en valeur toutes les ressources de la CoopTech il a été proposé d'utiliser le _widget open source_ créé par la coopérative numérique [**multi**](https://multi.coop) : le projet **[Gitribute](https://gitlab.com/multi-coop/gitribute)**.
+Afin de pouvoir partager et de mettre en valeur toutes les ressources de la CoopTech il a été proposé d'utiliser le _widget open source_ créé par la coopérative numérique **[multi](https://multi.coop)** : le projet **[Datami](https://gitlab.com/multi-coop/datami)**.
 
 Cet outil permet la **visualisation** des données mais également la **contribution**.
 
@@ -20,21 +20,15 @@ L'autre avantage de cette solution est qu'elle n'est déployée qu'une fois, mai
 
 ## Démo
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/57d96b44-b6c4-4f0a-a7f7-412571f23aa2/deploy-status)](https://app.netlify.com/sites/demo-gitribute-cooptech/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/57d96b44-b6c4-4f0a-a7f7-412571f23aa2/deploy-status)](https://app.netlify.com/sites/datami-demo-cooptech/deploys)
 - URL de démo : 
-  - gitribute-file / données CoopTech : https://demo-gitribute-cooptech.netlify.app/
-
----
-
-## Captures d'écran
-
-![preview](./images/screenshots/screenshot-01.png)
+  - DEMO / données CoopTech : https://datami-demo-gitribute-cooptech.netlify.app/
 
 ---
 
 ### Documentation 
 
-Un site dédié à la doucmentation technique de Gitribute est consultable ici : https://gitribute-docs.multi.coop
+Un site dédié à la doucmentation technique de Datami est consultable ici : https://datami-docs.multi.coop
 
 ---
 
@@ -49,6 +43,6 @@ Un site dédié à la doucmentation technique de Gitribute est consultable ici :
 
 ## Pour aller plus loin...
 
-### Gitribute
+### Datami
 
-Le widget fait partie intégrante du projet [Gitribute](https://gitlab.com/multi-coop/gitribute)
+Le widget fait partie intégrante du projet [Datami](https://gitlab.com/multi-coop/datami)
