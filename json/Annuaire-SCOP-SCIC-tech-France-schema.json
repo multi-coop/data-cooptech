@@ -78,12 +78,12 @@
       "type": "string"
     },
     {
-      "name": "Latitude",
+      "name": "latitude",
       "title": "Latitude du siège",
       "type": "number"
     },
     {
-      "name": "Longitude",
+      "name": "longitude",
       "title": "Longitude du siège",
       "type": "number"
     },

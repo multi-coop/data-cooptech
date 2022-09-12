@@ -30,6 +30,70 @@ L'autre avantage de cette solution est qu'elle n'est déployée qu'une fois, mai
 
 Un site dédié à la doucmentation technique de Datami est consultable ici : https://datami-docs.multi.coop
 
+
+---
+
+## Mini server for local development
+
+A mini server is writen in the `server.py` to serve this folder's files, so we could test and develop locally while running [multi-site-app]()
+
+To install the mini-server :
+
+```sh
+pip install --upgrade pip
+python3 -m pip install --user virtualenv
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+or
+
+```sh
+sh setup.sh
+source venv/bin/activate
+```
+
+---
+
+### Geocoder
+
+To geocode the dataset :
+
+```sh
+python geocoder.py csv/rhinocc-inclusion-dataset.csv -sep , -adress Adresse
+```
+
+or
+
+```sh
+sh run_geocoding.sh
+```
+
+The output geocoded file will be generated at `csv/geocoding/geocoded.csv`
+
+---
+
+### Run local server
+
+To run the server on `http://localhost:8801`:
+
+```sh
+python server.py
+```
+
+or
+
+```sh
+sh run_server.sh
+```
+
+Files will be locally served on :
+
+- `http://localhost:8801/content/<path:folder_path>/<string:filename>`
+- `http://localhost:8801/statics/<path:folder_path>/<string:filename>`
+
 ---
 
 ## Crédits
