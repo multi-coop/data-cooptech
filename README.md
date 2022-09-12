@@ -22,7 +22,7 @@ L'autre avantage de cette solution est qu'elle n'est déployée qu'une fois, mai
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/57d96b44-b6c4-4f0a-a7f7-412571f23aa2/deploy-status)](https://app.netlify.com/sites/datami-demo-cooptech/deploys)
 - URL de démo : 
-  - DEMO / données CoopTech : https://datami-demo-gitribute-cooptech.netlify.app/
+  - DEMO / données CoopTech : https://datami-demo-cooptech.netlify.app/
 
 ---
 
